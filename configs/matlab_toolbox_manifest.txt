@@ -1,0 +1,52 @@
+DATUM - MATLAB entitlement manifest [Measured via MATLAB MCP, 2026-07-17]
+MATLAB Version: 26.1.0.3276743 (R2026a) Update 3
+License Number: DEMO  <-- TRIAL LICENSE. Learning/evaluation only. NOT valid for
+commercial or revenue-generating use per MathWorks terms [licensing gate].
+OS: Windows 11 Home 10.0 Build 26200
+
+Handoff "minimum set" coverage: COMPLETE
+  MATLAB, Simulink, Control System Tbx, System Identification Tbx,
+  Signal Processing Tbx, Optimization Tbx, Statistics & ML Tbx,
+  Simscape, Simscape Fluids, Simscape Electrical
+Advanced additions present: Robust Control, Model Predictive Control,
+  Simulink Control Design, Stateflow, Parallel Computing
+Hardware-stage additions present: Data Acquisition, Instrument Control,
+  Vehicle Network, Simulink Coder (Embedded Coder NOT listed)
+Also relevant to RD-03/RD-04: Curve Fitting, Predictive Maintenance,
+  Symbolic Math, Global Optimization, Simulink Test, Requirements Tbx,
+  Simulink Design Optimization, Simscape Driveline/Multibody
+
+Full ver listing (93 products, all Version 26.1 R2026a):
+Simulink; Aerospace Blockset; Aerospace Tbx; Antenna Tbx; Audio Tbx;
+Bioinformatics Tbx; Bluetooth Tbx; C2000 Microcontroller Blockset;
+Communications Tbx; Computer Vision Tbx; Control System Tbx; Curve Fitting Tbx;
+DSP System Tbx; Data Acquisition Tbx; Database Tbx; Datafeed Tbx;
+Deep Learning Tbx; Econometrics Tbx; Financial Instruments Tbx; Financial Tbx;
+Fixed-Point Designer; Fuzzy Logic Tbx; Global Optimization Tbx;
+Image Acquisition Tbx; Image Processing Tbx; Industrial Communication Tbx;
+Instrument Control Tbx; Lidar Tbx; MATLAB Coder; MATLAB Report Generator;
+MATLAB Test; Mapping Tbx; Medical Imaging Tbx; Mixed-Signal Blockset;
+Model Predictive Control Tbx; Motor Control Blockset; Navigation Tbx;
+Optimization Tbx; Parallel Computing Tbx; PDE Tbx; Phased Array System Tbx;
+Predictive Maintenance Tbx; RF Blockset; RF PCB Tbx; RF Tbx; ROS Tbx;
+Radar Tbx; Raspberry Pi Blockset; Reinforcement Learning Tbx; Requirements Tbx;
+Risk Management Tbx; Robotics System Tbx; Robust Control Tbx;
+STM32 Microcontroller Blockset; Satellite Communications Tbx;
+Sensor Fusion and Tracking Tbx; Signal Integrity Tbx; Signal Processing Tbx;
+SimBiology; SimEvents; Simscape; Simscape Battery; Simscape Driveline;
+Simscape Electrical; Simscape Fluids; Simscape Multibody;
+Simulink 3D Animation; Simulink Check; Simulink Coder; Simulink Control Design;
+Simulink Coverage; Simulink Design Optimization; Simulink Design Verifier;
+Simulink Desktop Real-Time; Simulink Fault Analyzer; Simulink Report Generator;
+Simulink Test; SoC Blockset; Spreadsheet Link; Stateflow;
+Statistics and Machine Learning Tbx; Symbolic Math Tbx; System Composer;
+System Identification Tbx; Text Analytics Tbx; UAV Tbx; Vehicle Network Tbx;
+Wavelet Tbx; Wireless Testbench
+
+Action items:
+- Commit this file to Datum repo at configs/matlab_toolbox_manifest.txt
+  (blocked: repo not visible to GitHub MCP yet)
+- Before ANY commercial use of MATLAB-derived work: resolve the DEMO/trial
+  license to a proper entitlement, or keep the commercial spine in Python
+  per the handoff decision. Trial expiry date: unknown - check in MATLAB
+  (Help > Licensing). [Web - 2026-07, VERIFY]

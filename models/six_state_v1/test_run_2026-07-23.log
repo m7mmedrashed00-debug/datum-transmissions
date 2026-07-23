@@ -1,0 +1,6 @@
+try
+  test_rd03_spine
+catch ME
+  fprintf('FAILED: %s\n', ME.message);
+end
+diary off

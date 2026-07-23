@@ -1,0 +1,30 @@
+RD-03 v0.2.1 BUILD REPORT (2026-07-19 02:33 UTC)
+model v0.2.1 | params RD03-P-0003 | MATLAB 26.1.0.3276743 (R2026a) Update 3
+tests: 15 passed, 0 failed (XFAIL convention: testXFAIL_* assert defects PRESENT)
+  test_rd03_spine/testAnalyticRLBenchmark
+  test_rd03_spine/testElectricalOnlyEnergyBalance
+  test_rd03_spine/testCdLimitsAndLeakOrdering
+  test_rd03_spine/testRegimeLabels
+  test_rd03_spine/testTrajectoryToleranceConvergence
+  test_rd03_spine/testXFAIL_D7_CoarseToleranceOutsideConvergence
+  test_rd03_spine/testEnergizeInvariants
+  test_rd03_spine/testVoltageOffDecay
+  test_rd03_spine/testSensorTracksSteadyLagsTransient
+  test_rd03_spine/testPheatZeroCounterfactualMatchesSol
+  test_rd03_spine/testXFAIL_D1_EMEnergyLedgerOpenWithForceActive
+  test_rd03_spine/testXFAIL_D4a_SeatedEquilibriumPenetrates
+  test_rd03_spine/testXFAIL_D4b_AllTimeSeatPenetration
+  test_rd03_spine/testXFAIL_D5_MovingVaporFloorViolated
+  test_rd03_spine/testXFAIL_D6_ReverseFlowUnsupported
+stiffness diagnostic @0.4s point: tau_fast 0.000102 s, tau_slow 98.4 s, spread 9.66e+05 (see rd03_stiffness.m for definition + caveats)
+ref fast end (0.4 s): i=0.9804 A xp=1.5540 mm P=390.0 kPa Tw=25.10 C | steps=570
+counterfactual Pheat=0 end (180 s): i=0.9336 A xp=1.3067 mm P=359.2 kPa Tw=38.10 C Tf=29.56 C
+sha256 rd03_params_m = c621a032cf0b67a3ad5ca012efff199d67b63785440e8c2f899fc94a2c366a25
+sha256 rd03_lib_m = ad43c33370793603a2ea3c8c92fcb9152e9b8abaffb8556c6b62c693a3a70ef4
+sha256 rd03_rhs_m = 8b0118d72fc73b2c4fcda282f811bb8df508010726b01bd682d3d414935b4c87
+sha256 rd03_observe_m = a55018442f35a1efe00887c60941bd343fc57a964940fe6da182303028e83d5d
+sha256 rd03_ic_m = ff16f7e51f9cab9a8a4e9f2dfe6ee7a1892f8803665fab60725b99987232783c
+sha256 rd03_solveropts_m = 4a2447afdd2303597de50efb393b6b063e3ab43abd42a0333717bddd661fa5dd
+sha256 rd03_stiffness_m = 64115bdf2f06032e2806ab542dba9c6f226e8ad32c1a7741c6dbc7547a0c03f6
+sha256 test_rd03_spine_m = 79a593b1e86f5b7c78ef7670e425ff4392eeb4ca8b24cdef19efc667b0572cdf
+sha256 rd03_build_m = bfca103ba66928f96fdebefdfc75322fe5f74965caca007a071ac990da3377ba

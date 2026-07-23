@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+*.asv
+*.slxc
+slprj/
+*.mexw64
+results-summary/*.tmp
+# raw data never enters git
+*.tdms
+*.h5
+*.parquet
