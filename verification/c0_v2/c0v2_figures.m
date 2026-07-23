@@ -143,16 +143,21 @@ fprintf('figures + report_numbers.json written to %s\n', fd);
 end
 
 function f = nf()
-f = figure('Visible','off','Position',[40 40 1500 950],'Color','w');
-set(f,'DefaultAxesFontSize',17,'DefaultLineLineWidth',2.4, ...
-      'DefaultAxesTitleFontSizeMultiplier',1.05);
+f = figure('Visible','off','Position',[40 40 1560 1000],'Color','w');
+set(f,'DefaultAxesFontSize',23,'DefaultLineLineWidth',3.2, ...
+      'DefaultLineMarkerSize',11, ...
+      'DefaultAxesTitleFontSizeMultiplier',1.0, ...
+      'DefaultAxesLabelFontSizeMultiplier',1.05, ...
+      'DefaultLegendFontSize',19);
 end
 function f = nf3()
-f = figure('Visible','off','Position',[40 40 1500 1000],'Color','w');
-set(f,'DefaultAxesFontSize',17,'DefaultLineLineWidth',2);
+f = figure('Visible','off','Position',[40 40 1560 1040],'Color','w');
+set(f,'DefaultAxesFontSize',21,'DefaultLineLineWidth',2.4);
 end
 function sv(f, fd, name, dosvg)
-print(f, fullfile(fd,[name '.png']), '-dpng','-r160');
+ax = findall(f,'Type','axes');
+for a = ax', grid(a,'on'); a.GridAlpha = 0.28; a.LineWidth = 1.2; end
+print(f, fullfile(fd,[name '.png']), '-dpng','-r170');
 if dosvg
     try, print(f, fullfile(fd,[name '.svg']), '-dsvg','-painters'); catch, end
 end
