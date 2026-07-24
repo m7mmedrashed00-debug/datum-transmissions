@@ -1,0 +1,54 @@
+=== C0 v3 GATE RUN run_20260724_113531 ===
+MATLAB 26.1.0.3276743 (R2026a) Update 3
+gate_config.json written (pre-results), approval: Mohammed / AskUserQuestion: Approve but stricter
+
+=== STAGE A' (manufactured solution) ===
+N        T1 int(Bx)    T2 energy     T3 circulation
+12       3.954e-03     4.936e-04     3.471e-03  
+25       9.092e-04     1.134e-04     7.993e-04  
+50       2.272e-04     2.832e-05     1.998e-04  
+100      5.680e-05     7.080e-06     4.995e-05  
+200      1.420e-05     1.770e-06     1.249e-05  
+400      3.550e-06     4.425e-07     3.122e-06  
+fitted orders: 2.001  2.001  2.000 (require 1.7..2.3 each)
+production N=200 max relerr: 1.420e-05 (require <1e-3)
+ellipke max |err| vs 30-digit refs: 2.22e-16 (require <1e-12)
+STAGE A' PASS
+[mms L1] Ng=8 nel=1070 | src chk -2.22e-16 | Ewin -1.314e-01 | A errs -7.02e-02 -7.68e-02 -7.00e-02
+[mms L2] Ng=16 nel=4463 | src chk +2.44e-15 | Ewin -3.427e-02 | A errs -1.90e-02 -1.88e-02 -1.78e-02
+[mms L3] Ng=32 nel=18091 | src chk +1.78e-15 | Ewin -8.697e-03 | A errs -4.63e-03 -4.81e-03 -4.79e-03
+[coax3 L1] h=0.004 nel=2498 | E -6.236e-03 Ein -7.310e-03 bi8 -1.055e-03 | Amp(on) -9.139e-04 | Bpt(on)max 1.411e-02
+[coax3 L2] h=0.002 nel=5928 | E -3.938e-03 Ein -3.765e-03 bi8 -4.655e-04 | Amp(on) +2.328e-03 | Bpt(on)max 1.217e-02
+[coax3 L3] h=0.001 nel=13868 | E -1.550e-03 Ein -1.783e-03 bi8 -8.186e-05 | Amp(on) +4.093e-04 | Bpt(on)max 6.778e-03
+[coax3 L4] h=0.0005 nel=41584 | E -5.068e-04 Ein -5.120e-04 bi8 -1.007e-05 | Amp(on) +3.614e-04 | Bpt(on)max 4.136e-03
+[coax3 L5] h=0.00025 nel=132262 | E -1.533e-04 Ein -1.370e-04 bi8 -5.356e-06 | Amp(on) +7.437e-05 | Bpt(on)max 3.228e-03
+[coax3 L6] h=0.000125 nel=461580 | E -4.165e-05 Ein -3.604e-05 bi8 -4.885e-07 | Amp(on) +1.064e-04 | Bpt(on)max 1.275e-03
+[celik coax energy (N-based h)] p_fit3=2.08 p_celik=2.059 r21=1.868 | GCI VALID (5.325e-05, asym 1.000, cover 1.28x) | true finest 4.165e-05 (signed -4.165e-05)
+[celik coax energy (requested h)] p_fit3=1.80 p_celik=1.662 r21=2.000 | GCI VALID (6.446e-05, asym 1.000, cover 1.55x) | true finest 4.165e-05 (signed -4.165e-05)
+[celik internal energy] p_fit3=2.20 p_celik=2.329 r21=1.868 | GCI VALID (3.842e-05, asym 1.000, cover 1.07x) | true finest 3.604e-05 (signed -3.604e-05)
+[celik bi8 upper] p_fit3=2.53 p_celik=0.076 r21=1.868 | GCI REFUSED: order solve failed (NaN, asym NaN, cover NaNx) | true finest 4.885e-07 (signed +4.885e-07)
+[celik Ampere (smoothed)] p_fit3=0.99 p_celik=NaN r21=1.868 | GCI REFUSED: non-monotone (oscillatory) triplet (NaN, asym NaN, cover NaNx) | true finest 1.064e-04 (signed +1.064e-04)
+[diag D1] bi8 err vs maxseg: [-5.06e-05 -1.01e-05 -1.96e-05]
+[diag D2] bi8 depth ratio = 2.000000000 (exact 2)
+[diag D3] tol deltas: E 3.71e-12 bi8 2.47e-09 Iloop 2.07e-10
+[loopdom R=0.10] nel=42849 | maxPhi err +1.787e-04 | maxB err +1.085e-02
+[loopdom R=0.14] nel=75242 | maxPhi err +6.868e-04 | maxB err +1.051e-02
+[loopdom R=0.20] nel=148519 | maxPhi err +6.033e-04 | maxB err +2.852e-03
+[loopdom] plateau: dPhi 0.10->0.14 7.27e-04 | 0.14->0.20 1.29e-03 ; dB 4.95e-03 | 9.73e-03
+
+=== C0 v3 GATE RESULTS (approved matrix) ===
+  APRIME    : 1
+  MMS       : 0
+  COAX_E    : 1
+  COAX_EIN  : 1
+  BI8       : 1
+  AMP       : 0
+  POINT     : 1
+  LOOPDOM   : 0
+  SOLVER    : 1
+  REF       : 1
+  UNITS     : 1
+  PROV      : 1
+9 / 12 gates
+run dir: C:\Users\m7mme\OneDrive\Documents\DTC - RND\c0\v3\runs\run_20260724_113531
+EVIDENCE BUNDLE COMPLETE.
